@@ -10,3 +10,4 @@ RUN cd data/stanford-dogs && curl http://vision.stanford.edu/aditya86/ImageNetDo
 RUN cd models/bvlc_googlenet && wget http://dl.caffe.berkeleyvision.org/bvlc_googlenet.caffemodel
 RUN sed -ie 's/gpu 0/gpu all/g' models/bvlc_googlenet/train.sh
 RUN pip install -r requirements.txt
+RUN chmod -R a+w models/bvlc_googlenet/.
