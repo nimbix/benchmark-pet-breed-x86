@@ -18,3 +18,6 @@ RUN chmod -R a+w models/bvlc_googlenet/.
 ADD 00-nimbix /etc/sudoers.d/00-nimbix
 RUN chmod 0440 /etc/sudoers.d/00-nimbix
 
+ADD benchmark.sh /usr/bin/benchmark.sh
+RUN chmod 0755 /usr/bin/benchmark.sh
+
