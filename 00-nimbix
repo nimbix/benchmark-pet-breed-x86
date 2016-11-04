@@ -1,0 +1,3 @@
+Defaults: nimbix !requiretty
+Defaults: root !requiretty
+nimbix ALL=(ALL) NOPASSWD: ALL
