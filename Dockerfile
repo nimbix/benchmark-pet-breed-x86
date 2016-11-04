@@ -13,7 +13,6 @@ RUN cd data/stanford-dogs && ./create_image.sh
 RUN cd models/bvlc_googlenet && wget http://dl.caffe.berkeleyvision.org/bvlc_googlenet.caffemodel
 RUN sed -ie 's/gpu 0/gpu all/g' models/bvlc_googlenet/train.sh
 RUN pip install -r requirements.txt
-RUN chmod -R a+w models/bvlc_googlenet/.
 
 ADD 00-nimbix /etc/sudoers.d/00-nimbix
 RUN chmod 0440 /etc/sudoers.d/00-nimbix
