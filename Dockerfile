@@ -21,5 +21,5 @@ RUN ln -s /usr/bin/caffe_convert_imageset /usr/bin/convert_imageset
 ADD 00-nimbix /etc/sudoers.d/00-nimbix
 RUN chmod 0440 /etc/sudoers.d/00-nimbix
 
-RUN touch /etc/NAE/test-marker
+RUN mkdir -p /etc/NAE && touch /etc/NAE/test-marker
 
